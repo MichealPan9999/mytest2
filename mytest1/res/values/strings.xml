@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">mytest1</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="str_array_weather_status">
+        <item>Sunny</item>
+        <item>Cloudy</item>
+        <item>Overcast</item>
+        <item>Shower</item>
+        <item>Thunder shower</item>
+        <item>Thunderstorms with hail</item>
+        <item>Sleet </item>
+        <item>Drizzle</item>
+        <item>Pour</item>
+        <item>Downpour</item>
+        <item>Storm rain</item>
+        <item>Heavy storm snow</item>
+        <item>Extraordinary storm</item>
+        <item>Snow shower</item>
+        <item>Light snow</item>
+        <item>Moderate snow</item>
+        <item>Heavy snow</item>
+        <item>Blizzard</item>
+        <item>foggy</item>
+        <item>Freezing rain</item>
+        <item>Sandstorm </item>
+        <item>Light to moderate rain</item>
+        <item>Moderate to heavy rain</item>
+        <item>Heavy to storm rain</item>
+        <item>Storm to heavy storm rain</item>
+        <item>Light to moderate snow</item>
+        <item>Moderate to heavy snow</item>
+        <item>Heavy to storm snow</item>
+        <item>Dust</item>
+        <item>Blowing sand</item>
+        <item>Blowing sand</item>
+        <item>Heavy sandstorm</item>
+        <item>Haze</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="str_array_week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+    <string-array name="str_array_month">
+        <item>Jan.</item>
+        <item>Feb.</item>
+        <item>Mar.</item>
+        <item>Apr.</item>
+        <item>May</item>
+        <item>Jun.</item>
+        <item>Jul.</item>
+        <item>Aug.</item>
+        <item>Sept.</item>
+        <item>Oct.</item>
+        <item>Nov.</item>
+        <item>Dec.</item>
+    </string-array>
+
+</resources>
