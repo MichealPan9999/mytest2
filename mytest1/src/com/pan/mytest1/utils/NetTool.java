@@ -14,7 +14,7 @@ public class NetTool {
 	}
 
 	public String getNetworkType() {
-		String strNetworkType = "";
+		String strNetworkType = null;
 		NetworkInfo networkInfo = ((ConnectivityManager) mContext
 				.getSystemService(Context.CONNECTIVITY_SERVICE))
 				.getActiveNetworkInfo();
@@ -71,11 +71,23 @@ public class NetTool {
 			} else if (networkInfo.getType() == ConnectivityManager.TYPE_ETHERNET) {
 				strNetworkType = "ETHERNET";
 			}
-		}
-		else {
-			System.out.println("网络信息为空");
+		} else {
+			System.out.println("无网络信息");
 		}
 		return strNetworkType;
+	}
+	public boolean isNetWorkAvailable(Context context)
+	{
+		ConnectivityManager connectivity = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+		if (connectivity != null) {
+			NetworkInfo info = connectivity.getActiveNetworkInfo();
+			if (info != null && info.isConnected()) {
+				if (info.getState() == NetworkInfo.State.CONNECTED) {
+					return info.isAvailable();
+				}
+			}
+		}
+		return false;
 	}
 
 }
